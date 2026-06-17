@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of N Numbers</title>
+</head>
+<body>
+    <div id="ab">
+        <h1>Sum Of N Numbers</h1>
+        <label for="aab">Enter A Number:</label>
+        <input id="aab" type="number" placeholder="Enter A Number"><br>
+        <button id="btn">Find Sum</button>
+        <p id="result"></p>
+    </div>
+
+
+</body>
+<script>
+document.getElementById("btn").addEventListener("click", function() {
+            let n = parseInt(document.getElementById("aab").value);
+            if (isNaN(n) || n <= 0) {
+                document.getElementById("result").textContent = "Please enter a positive number.";
+                return;
+            }
+            
+            let sum = (n * (n + 1)) / 2;
+            
+            document.getElementById("result").textContent = "Sum of first " + n + " numbers is: " + sum;
+        });
+
+</script>
+</html>
