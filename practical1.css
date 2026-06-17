@@ -1,0 +1,20 @@
+#ab{
+    height: 300px;
+    width: 400px;
+    border: 20px;
+    border-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background-color: antiquewhite;}
+
+
+#btn{
+    height: 30px;
+    width: 100px;
+    background-color: Red;
+    border: 20px;
+    border-radius: 7px;
+    color: antiquewhite;
+}
